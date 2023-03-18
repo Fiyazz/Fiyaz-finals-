@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex md:flex-auto justify-between font-serif bg-red p-8">
+  <nav class="flex md:flex-auto justify-between items-center font-serif bg-red p-4">
     <div class="flex flex-row gap-2">
       <img src="../assets/shopping-bag.png" class="w-8 h-8" alt="logo" />
       <h3 class="text-2xl uppercase text-white">dodo</h3>
@@ -45,10 +45,10 @@
         { hidden: !showMenu },
       ]"
     >
-      <li class="text-white text-xl hover:text-black" id="home">
+      <li class="text-white text-xl p-3 hover:text-black" id="home">
         <router-link to="/">{{ Home }}</router-link>
       </li>
-      <li class="text-white text-xl hover:text-black" id="product">
+      <li class="text-white text-xl p-3 hover:text-black" id="product">
         <router-link to="/productpage">{{ Products }}</router-link>
       </li>
       <li class="text-white text-xl hover:text-black" id="login">
@@ -57,7 +57,7 @@
       <li class="text-white text-xl hover:text-black" id="signup">
         <router-link to="/signup">{{ Signup }}</router-link>
       </li>
-      <li class="text-white text-xl hover:text-black" id="logout">
+      <li class="text-white text-xl hover:text-black border-white border-2 p-3 rounded-xl" id="logout">
         <button @click="logout">{{ Logout }}</button>
       </li>
     </ul>

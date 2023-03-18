@@ -18,15 +18,18 @@
         <router-link to="/productpage"> Discover Now </router-link>
       </button>
     </div>
+    <FooterComponent />
   </div>
 </template>
 <script>
+import FooterComponent from "@/components/FooterComponent.vue";
 import NavBar from "@/components/NavBar.vue";
 
 export default {
   name: "HomePage",
   components: {
     NavBar,
-  },
+    FooterComponent
+},
 };
 </script>
