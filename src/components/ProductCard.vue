@@ -15,10 +15,10 @@
           {{ product.title }}
         </h3>
         <div class="flex flex-row gap-10 justify-between mb-5">
-          <p class="text-sm bg-red text-white w-fit p-3 rounded-xl">
+          <p class="text-sm bg-deepblue text-white w-fit p-3 rounded-xl">
             {{ product.brand }}
           </p>
-          <p class="text-lg text-red">$ {{ product.price }}</p>
+          <p class="text-lg text-deepblue">$ {{ product.price }}</p>
         </div>
 
         <div class="flex justify-center">
@@ -48,7 +48,7 @@ export default {
   async created() {
     try {
       const response = await axios.get("https://dummyjson.com/products");
-      this.products = response.data.products.slice(0, 12);
+      this.products = response.data.products.slice(10, 22);
       console.log(this.products);
     } catch (error) {
       console.log(error);

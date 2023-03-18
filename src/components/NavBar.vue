@@ -1,13 +1,12 @@
 <template>
-  <nav class="flex md:flex-auto justify-between items-center font-serif bg-red p-4">
+  <nav class="flex md:flex-auto justify-between items-center font-serif bg-deepblue p-4">
     <div class="flex flex-row gap-2">
-      <img src="../assets/shopping-bag.png" class="w-8 h-8" alt="logo" />
-      <h3 class="text-2xl uppercase text-white">dodo</h3>
+      <h3 class="text-2xl uppercase text-white">fiyazz</h3>
     </div>
 
     <!-- Hamburger Menu Button -->
     <button
-      class="block md:hidden text-white hover:text-black focus:text-black focus:outline-none"
+      class="block md:hidden text-white hover:text-white focus:text-black focus:outline-none"
       @click="showMenu = !showMenu"
     >
       <svg
@@ -45,19 +44,19 @@
         { hidden: !showMenu },
       ]"
     >
-      <li class="text-white text-xl p-3 hover:text-black" id="home">
+      <li class="text-white text-xl p-3 hover:text-white" id="home">
         <router-link to="/">{{ Home }}</router-link>
       </li>
-      <li class="text-white text-xl p-3 hover:text-black" id="product">
+      <li class="text-white text-xl p-3 hover:text-white" id="product">
         <router-link to="/productpage">{{ Products }}</router-link>
       </li>
-      <li class="text-white text-xl hover:text-black" id="login">
+      <li class="text-white text-xl hover:text-white" id="login">
         <router-link to="/login">{{ Login }}</router-link>
       </li>
-      <li class="text-white text-xl hover:text-black" id="signup">
+      <li class="text-white text-xl hover:text-white" id="signup">
         <router-link to="/signup">{{ Signup }}</router-link>
       </li>
-      <li class="text-white text-xl hover:text-black border-white border-2 p-3 rounded-xl" id="logout">
+      <li class="text-white text-xl hover:text-white border-white border-2 p-3 rounded-xl" id="logout">
         <button @click="logout">{{ Logout }}</button>
       </li>
     </ul>

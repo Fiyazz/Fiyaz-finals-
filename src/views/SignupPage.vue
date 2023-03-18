@@ -60,7 +60,7 @@
 
     <div>
       <img
-        src="../assets/image3.png"
+        src="../assets/image4.png"
         alt="image"
         class="w-full h-screen hidden md:block"
       />

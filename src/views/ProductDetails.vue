@@ -1,6 +1,6 @@
 <template>
   <NavBar />
-  <div class="px-[20px] py-[20px] flex justify-center items-center font-serif">
+  <div class="px-[20px] py-[20px] flex justify-center items-center h-screen font-serif">
     <div class="card rounded-2xl flex md:flex-row flex-col gap-20 w-fit h-secreen m-4">
       <div>
         <img :src="this.img" alt="" class="w-fit h-[300px] rounded-2xl" />
@@ -14,7 +14,7 @@
           {{ description }}
         </h4>
         <h5
-          class="bg-red w-fit mt-[10px] capitalize text-white py-[7px] px-[20px] rounded-[6px]"
+          class="bg-deepblue w-fit mt-[10px] capitalize text-white py-[7px] px-[20px] rounded-[6px]"
         >
           Category: {{ category }}
         </h5>
@@ -88,7 +88,7 @@ export default {
       try {
         const parameter = this.$route.params.id;
         const res = await axios.get(
-          `http://dummyjson.com/products/${parameter}`
+          `https://dummyjson.com/products/${parameter}`
         );
         console.log(res.data);
         this.products = res.data;
